@@ -1,0 +1,285 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    background-color: #404040;
+    color:#D6D6D6;
+    scroll-behavior: smooth;
+
+}
+h1{
+    font-size:xx-large;
+}
+h3{
+    font-size:x-large;
+}
+.heroImg,#skills,#work,#contact{
+    scroll-margin-top:5em;
+}
+header{
+    width:100%;
+    height:70.47px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+.container{
+    padding:10px 5%;
+    background-color: #808080;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: wrap;
+    background-color: #808080;
+}
+.show-mobile{
+    display: none;
+}
+
+
+nav ul{
+    background-color:#808080;
+}
+nav ul li a{
+    background-color: #808080;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+nav ul li{
+    display:inline-flex;
+    list-style:none;
+    margin:10px 20px;
+}
+.logoSize{
+    margin-top: 10px;
+    display: inline-block;
+    width: 230px;
+    height: auto;
+    background-color: #808080;
+    cursor: pointer;
+}
+.inline-block{
+    display:inline-block;
+    vertical-align:top;
+}
+/* hero image*/
+.heroImg img{
+    display:inline-block;
+    height: 460px;
+    border-radius: 5%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    margin: 3% 0px;
+    margin-top: 8%;
+}
+.profileImage{
+    display: flex;
+    justify-content: center;
+}
+.childClass{
+    width: 50%;
+    float: left;
+    padding: 0px;
+}
+.infoSpacing{
+    margin-top: 3%;
+    width:80%;
+}
+.resumeButton{
+    display: inline-block;
+    width: auto;
+    border-radius: 16px;
+    padding: 9px 20px;
+    margin-right:11px;
+    background-color: #a3d9d385;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #D6D6D6;
+    font-size: 15px;
+    color: white;
+}
+
+.socialMediaImageHeader li{
+    display:inline-block;
+    list-style: none;
+    margin: 3% 3% 0% 0%;
+}
+.socialMediaImageHeader li img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+/* Footer */
+footer{
+    color:white;
+    padding: 20px 0px;
+    border-bottom: 20px #a3d9d385 solid;
+    border-top: 20px #a3d9d385 solid;
+    margin-top: 3%;
+}
+footer ul li{
+    margin: 10px 20px;
+
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    padding:5px;
+}
+.socialMediaImages{
+    display:inline-block;
+    width: 30px;
+    cursor: pointer;
+}
+.socialMediaImages img{
+    width: 40px;
+}
+
+/* My UX Skills section coded using CSS flex*/
+.qualifications{
+    width: 90%;
+    display: inline-block;
+}
+.mySkills h1,.myTools h1{
+    margin-bottom: 5%;
+}
+.mySkills,.myTools{
+    margin-bottom: 5%;
+}
+.boxedItems{
+    width: 80%;
+}
+.boxedItems p{
+    display: inline-block;
+    padding: 14px 40px;
+    margin: 8px;
+    background: #a3d9d385;
+    border-radius: 5px;
+    color: white !important;
+}
+/* My Work Section Constructed using CSS Grid*/
+.workGrid{
+    margin: 2%;
+    display:grid;
+    grid-column-gap:20px;
+    grid-template-rows: 310px 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "project1 project2 project3" "project1Info project2Info project3Info";
+}
+#firstProject{
+    grid-area:project1;
+
+}
+#secondProject{
+    grid-area:project2;
+}
+#thirdProject{
+    grid-area:project3;
+}
+#firstProjectInfo{
+    grid-area: project1Info;
+}
+#secondProjectInfo{
+    grid-area: project2Info;
+}
+#thirdProjectInfo{
+    grid-area: project3Info;
+}
+#firstProjectInfo,#secondProjectInfo,#thirdProjectInfo{
+    background-color: black;
+}
+.cardInfo{
+    text-align: center;
+    background-color: black;
+    margin-top: 15px;
+}
+.workGrid img{
+    display: flex;
+    float: left;
+    width:  100%;
+    height: 310px;
+    object-fit: cover;
+}
+.qualifications,.myWork{
+    margin: 1% 5%;
+}
+.projectButtons{
+    margin: 5% 5%;
+    padding:10px;
+    background-color: #a3d9d385;
+}
+.workTitle{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.viewProjects{
+    cursor: pointer;
+}
+.hoverText.active{
+    color: white;
+    text-decoration:underline;
+}
+.qualifications h1, .myWork h1{
+    color: #A3D9D3;
+}
+.navInteraction.active a{
+    color:#A3D9D3 !important;
+    text-decoration: underline;
+
+}
+
+button.active{
+    background-color: #808080;
+    box-shadow: 2px 1px 4px black;
+    
+}
+.toggleProject.active{
+    opacity: 50%;
+}
+.hoverProject{
+    cursor: pointer;
+}
+
+
+/*Responsive Design for Mobile Devices*/
+@media only screen and (max-width:600px) {
+    .flexContainer{flex-direction: column;}
+    body{
+        flex-direction: column;
+    }
+    .boxedItems p{
+        font-size: small;
+        padding: 7px 25px;
+        margin: 5px;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    #hamburgerIcon{
+        background-color: transparent;
+    }
+    .left-align { float: left; }
+    .right-align { float: right; }
+    .show-mobile{display: flex;}
+    .workGrid{
+        display:grid;
+        grid-template-rows:300px 140px 300px 140px 300px 140px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "project1" "project1Info" "project2" "project2Info" "project3" "project3Info";
+        grid-row-gap:10px;
+    }
+    .workGrid img{
+        width:  100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}

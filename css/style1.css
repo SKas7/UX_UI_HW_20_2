@@ -1,0 +1,117 @@
+/* Navbar*/
+.inline-block{
+    display:inline-block;
+    vertical-align:top;
+}
+div .logo{
+    width:23%;
+    padding:1%;
+}
+div nav{
+    width:73%;
+    padding:1%;
+}
+ul{
+    width:50%;
+    margin-left:auto;
+}
+.logo{
+    text-align:center;
+
+}
+.logoImage{
+    width:20%;
+    margin-top: 10px;;
+}
+
+/* hero image*/
+section .heroImg{
+    height: 600px;
+    padding: 25px;
+}
+.content{
+    width: 500px;
+    margin:0 auto;
+
+}
+
+/* Footer */
+footer{
+    background-color:#373738;
+    color:white;
+}
+
+footer ul li{
+    padding: 10px 20px;
+    margin:auto;
+}
+
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: auto;
+    margin-left:auto;
+
+}
+header{
+    background-color: #373738;
+    color:white;
+}
+
+/* My UX Skills section coded using CSS flex*/
+.flexContainer{
+    display:flex;
+}
+
+.flexContainer div{
+    width:33%;
+    margin: 2em;
+    padding: 10px;
+}
+
+.flexContainer{
+    flex-direction: row;
+}
+
+/* My Work Section Constructed using CSS Grid*/
+.workGrid{
+    margin:5%;
+    display:grid;
+    grid-gap:20px;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "item1 item1Info" "item2 item2Info" "item3 item3Info";
+}
+#firstProject{
+    grid-area:item1;
+    width:auto;
+    height: auto;
+    border: 1px black solid;
+}
+#secondProject{
+    grid-area:item2;
+    border: 1px black solid;
+}
+#thirdProject{
+    grid-area:item3;
+    border: 1px black solid;
+}
+#firstProjectInfo{
+    grid-area: item1Info;
+}
+
+.workGrid img{
+    max-width: 100%;
+}
+
+/*Responsive Design for Mobile Devices*/
+@media only screen and (max-width:600px) {
+    .flexContainer{flex-direction: column;}
+
+    .workGrid{
+        display:grid;
+        grid-template-rows:300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item1" "item1Info" "item2" "item2Info" "item3" "item3Info";
+    }
+}
