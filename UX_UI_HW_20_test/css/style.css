@@ -1,0 +1,69 @@
+.jumbotron{
+    height:300px;
+    height:calc(100vh - 60vh);
+}
+.row{
+    margin: 0px !important;
+}
+
+.sectionDivider{
+    margin: 5% 0%;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    background-color: #a3d9d385;
+    color: white;
+}
+.centering{
+    margin: auto;
+    float: none;
+}
+.test img {
+    width: 100%;
+    height: auto;
+    margin: auto;    
+    display: block;
+}
+.heroImg img{
+    width: 90%;
+    height: auto;
+    margin: auto;    
+    display: block;
+}
+.hifiPrototype{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+footer{
+    color:white;
+    border-bottom: 20px #a3d9d385 solid;
+    border-top: 20px #a3d9d385 solid;
+    margin-top: 3%;
+}
+.footerBackground{
+    background-color: #404040;
+    border: 1px #404040 solid;
+}
+footer ul li{
+    margin: 10px 20px;
+
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    padding:5px;
+}
+.socialMediaImages{
+    display:inline-block;
+    width: 30px;
+    cursor: pointer;
+}
+.socialMediaImages img{
+    width: 40px;
+}
