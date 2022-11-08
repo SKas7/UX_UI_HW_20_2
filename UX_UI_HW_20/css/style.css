@@ -1,6 +1,8 @@
 .jumbotron{
     height:300px;
     height:calc(100vh - 60vh);
+    background-color: #A3D9D3;
+    color: white;
 }
 .row{
     margin: 0px !important;
@@ -11,7 +13,7 @@
     text-align: center;
     padding: 2%;
     width: 100%;
-    background-color: #a3d9d385;
+    background-color: #A3D9D3;
     color: white;
 }
 .centering{
@@ -41,8 +43,8 @@
 
 footer{
     color:white;
-    border-bottom: 20px #a3d9d385 solid;
-    border-top: 20px #a3d9d385 solid;
+    border-bottom: 20px #A3D9D3 solid;
+    border-top: 20px #A3D9D3 solid;
     margin-top: 3%;
 }
 .footerBackground{
